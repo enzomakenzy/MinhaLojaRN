@@ -1,6 +1,6 @@
 export interface LoginCredentials {
-  usuario: string;
-  senha: string;
+  user: string;
+  password: string;
 }
 
 export interface LoginResponseAPI {
