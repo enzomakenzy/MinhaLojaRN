@@ -1,7 +1,7 @@
 import api from "../api/axiosConfig";
 import { LoginCredentials, LoginResponseAPI } from "../types/api";
 
-export async function realizarLogin(credentials: LoginCredentials,): Promise<LoginResponseAPI> {
+export async function realizeLogin(credentials: LoginCredentials,): Promise<LoginResponseAPI> {
   try {
     const response = await api.post<LoginResponseAPI>("auth/login", {
       username: credentials.user,
