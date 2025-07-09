@@ -16,10 +16,10 @@ export const Title = styled.Text`
 export const Input = styled.TextInput`
   width: 100%;
   padding: 10px;
-  border-width: 1;
+  border-width: 1px;
   border-color: #ccc;
   border-radius: 5px;
-  margin-bottom: 10;
+  margin-bottom: 10px;
 `;  
 
 export const Button = styled(TouchableOpacity).attrs({
