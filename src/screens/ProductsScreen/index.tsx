@@ -71,6 +71,18 @@ export function ProductsScreen({ toLogout }: ProductsScreenProps) {
     )
   }
 
+  useEffect(() => {
+    if (searchTerm === "") {
+      setFiltersProducts(productsList);
+    } else {
+      const findsProducts = productsList.filter(product => (
+        product.title.toLowerCase().includes(searchTerm.toLowerCase()) || product.category.toLowerCase().includes(searchTerm.toLowerCase())
+      ))
+
+      setFiltersProducts(findsProducts)
+    }
+  }, [searchTerm, productsList]);
+
   return (
     <Container>
       <Header>
