@@ -3,7 +3,7 @@ import { ActivityIndicator } from "react-native";
 import styled from "styled-components/native";
 
 import { LoginScreen } from "./src/screens/LoginScreen";
-import { ProductsScreen } from "./src/screen/ProductsScreen"
+import { ProductsScreen } from "./src/screens/ProductsScreen";
 
 import { getToken, deleteToken } from "./src/services/storageService";
 import api from "./src/api/axiosConfig";
